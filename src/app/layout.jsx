@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${gabarito.className}`}>
         <Navbar />
-        <div className='md:pt-9 sm:pt-9 pt-16'>
+        <div className='md:pt-9 sm:pt-10 pt-20'>
           {children}
         </div>
       </body>
