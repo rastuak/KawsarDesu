@@ -1,11 +1,16 @@
 import Animelist from '../components/AnimeList/index';
 import Header from '@/components/AnimeList/Header.jsx';
-import { getAnimeResponse } from '@/libs/api-libs'
+import { getAnimeResponse, getNestedAnimeResponse, randomNums } from '@/libs/api-libs'
 
 
 const Page = async () => {
   const topAnime = await getAnimeResponse("top/anime", "limit=10")
-  const randomAnime = await getAnimeResponse("random/anime","")
+  // const kocokAngka = Math.floor(Math.random()*192)
+  let recomendAnime = await getNestedAnimeResponse("recommendations/anime","entry")
+  // recomendAnime = {data: recomendAnime.slice(kocokAngka-1,kocokAngka+7)}
+  recomendAnime = {data: randomNums(recomendAnime, 8)}
+
+
   return (
     <>
       <div className='flex'>
@@ -15,8 +20,8 @@ const Page = async () => {
             <Animelist api={topAnime} />
           </section>
           <section className='pt-1 shadow-md shadow-slate-300'>
-            <Header headerTitle="Recommended Anime" linkHref="/top" linkTitle="See all" />
-            <Animelist api={topAnime} />
+            <Header headerTitle="Recommended Anime" linkHref="/recommended" linkTitle="See all" />
+            <Animelist api={recomendAnime} />
           </section>
         </div>
         {/* <div

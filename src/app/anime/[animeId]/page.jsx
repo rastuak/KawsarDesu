@@ -1,10 +1,15 @@
 import BoxDesc from '@/components/BoxDesc/BoxDesc'
-import { getAnimeResponse } from '@/libs/api-libs'
+import { getAnimeEpisodeById, getAnimeResponse } from '@/libs/api-libs'
 import Image from 'next/image'
 import VideoPlayer from '@/components/utilities/VideoPlayer';
 
 const Page = async ({ params: { animeId } }) => {
     const Animes = await getAnimeResponse(`anime/${animeId}`)
+
+    const episodeanime = await getAnimeEpisodeById(animeId)
+    console.log(episodeanime.data)
+
+
     return (
         <div className='flex flex-col p-4 gap-3'>
             <br />

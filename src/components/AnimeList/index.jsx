@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import nonePict from "@/components/pict/none.jpeg"
 
 const Animelist = ({ api }) => {
   return (
@@ -14,7 +15,7 @@ const Animelist = ({ api }) => {
                     height={400}
                     objectfitimages="cover"
                     src={data.images.webp.image_url}
-                    alt=""
+                    alt={nonePict}
                     className="w-full max-h-64"
                   />
                 </div>
