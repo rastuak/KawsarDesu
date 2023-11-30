@@ -10,7 +10,7 @@ const Home = async ({params}) => {
 
   return (
     <>
-    <div className=''>
+    <div className='justify-center md:mx-44 sm:mx-2'>
       <Header headerTitle={`Pencarian untuk ${decodedParamKey}...`}/>
       <Animelist api={Animes} />
     </div>

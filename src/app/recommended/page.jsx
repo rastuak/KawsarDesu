@@ -14,7 +14,7 @@ const page = async () => {
 
     return (
         <>
-            <div className='sm:mr-0 md:mr-72'>
+            <div className='justify-center md:mx-44 sm:mx-2'>
                 <HeaderMenu title="Recommended Anime List"/>
                 <section className='pt-1 shadow-md shadow-slate-300'>
                     <Header headerTitle="Recommended Anime" />

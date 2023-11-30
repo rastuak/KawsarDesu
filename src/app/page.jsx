@@ -8,13 +8,13 @@ const Page = async () => {
   // const kocokAngka = Math.floor(Math.random()*192)
   let recomendAnime = await getNestedAnimeResponse("recommendations/anime","entry")
   // recomendAnime = {data: recomendAnime.slice(kocokAngka-1,kocokAngka+7)}
-  recomendAnime = {data: randomNums(recomendAnime, 8)}
+  recomendAnime = {data: randomNums(recomendAnime, 10)}
 
 
   return (
     <>
       <div className='flex'>
-        <div className='w-screen mr:0 md:mr-72'>
+        <div className='justify-center mx-2 md:mx-24 lg:mx-24 xl:mx-48'>
           <section className='pt-1 shadow-md shadow-slate-300'>
             <Header headerTitle="Top Anime" linkHref="/top" linkTitle="See all" />
             <Animelist api={topAnime} />
