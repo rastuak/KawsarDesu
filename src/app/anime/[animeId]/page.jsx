@@ -30,12 +30,11 @@ const Page = async ({ params: { animeId } }) => {
                     <VideoPlayer youtubeId={Animes.data.trailer.youtube_id} />
                 </div>
             </div>
-            <div className='flex justify-center items-center gap-4 overflow-x-auto'>
+            <div className='grid grid-cols-2 md:flex self-center justify-center items-center gap-4'>
                 <BoxDesc title='' desc={`${Animes.data.rating}`} />
                 <BoxDesc title='Rank' desc={`${Animes.data.rank}`} />
                 <BoxDesc title='Rating' desc={`${Animes.data.score}`} />
                 <BoxDesc title='Status' desc={`${Animes.data.status}`} />
-                <BoxDesc title='Member' desc={`${Animes.data.members}`} />
                 <BoxDesc title='Episode' desc={`${Animes.data.episodes}`} />
                 <BoxDesc title='Duration' desc={`${Animes.data.duration}`} />
             </div>
