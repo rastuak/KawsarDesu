@@ -23,8 +23,8 @@ const page = () => {
 
   return (
     <>
-      <HeaderMenu title="Top Anime List" page={page}/>
       <div className='sm:mr-0 md:mr-72'>
+      <HeaderMenu title="Top Anime List" page={page}/>
         <section className='pt-1 shadow-md shadow-slate-300'>
           <Header headerTitle="Top Anime" />
           <Animelist api={topAnime} />
