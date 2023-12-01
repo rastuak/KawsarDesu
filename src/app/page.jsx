@@ -13,6 +13,7 @@ const Page = async () => {
 
   return (
     <>
+    <br/>
       <div className='flex'>
         <div className='justify-center mx-2 md:mx-24 lg:mx-24 xl:mx-48'>
           <section className='pt-1 shadow-md shadow-slate-300'>

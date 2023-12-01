@@ -24,7 +24,7 @@ const InputSearch = () => {
             <div className="relative top-2.5">
                 <form onSubmit={handleSearch} onKeyDown={handleSearch}>
                     <input placeholder='Search anime...'
-                        className='w-full p-1 left-0 right-0'
+                        className='w-full p-1.5 left-0 right-0 rounded-xl'
                         ref={searchRef}
                     />
                 </form>

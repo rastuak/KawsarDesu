@@ -7,9 +7,9 @@ const Animelist = ({ api }) => {
     <div className='p-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 pt-1'>
       {api.data?.map(data => {
         return (
-          <Link href={`/anime/${data.mal_id}`} key={data.mal_id} className='rounded-xl shadow-xl hover:text-white hover:bg-paletAbu-900 overflow-hidden'>
-              <div className="group hover:cursor-pointer transition-all h-full">
-                <div className="transition-all group-hover:scale-105 duration-100">
+          <Link href={`/anime/${data.mal_id}`} key={data.mal_id} className='group rounded-xl shadow-xl hover:bg-paletAbu-900 overflow-hidden hover:scale-110 duration-300'>
+              <div className="group hover:cursor-pointer transition-all group-hover:text-white">
+                <div className="transition-all group-hover:scale-105 duration-300">
                   <Image
                     width={350}
                     height={400}

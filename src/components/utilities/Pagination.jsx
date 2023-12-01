@@ -26,7 +26,7 @@ const Pagination = ({ page, lastPage, setPage }) => {
         {
           page > 1 ?
           <button
-            className='transition-all hover:font-bold hover:text-xl'
+            className='transition-all hover:font-bold hover:scale-110'
             onClick={handlePagePrev}
           >Prev</button> : null
         }
@@ -34,7 +34,7 @@ const Pagination = ({ page, lastPage, setPage }) => {
         {
           page < 1040 ?
         <button
-          className='transition-all hover:font-bold hover:text-xl'
+          className='transition-all hover:font-bold hover:scale-110'
           onClick={handlePageNext}
         >Next</button> : null
         }

@@ -26,7 +26,7 @@ const Page = async ({ params: { animeId } }) => {
                         className="justify-center  shadow-lg rounded-md"
                     />
                 </div>
-                <div className='self-center p-1 shadow-xl '>
+                <div className='self-center p-1 shadow-xl'>
                     <VideoPlayer youtubeId={Animes.data.trailer.youtube_id} />
                 </div>
             </div>
@@ -35,10 +35,10 @@ const Page = async ({ params: { animeId } }) => {
                 <BoxDesc title='Rank' desc={`${Animes.data.rank}`} />
                 <BoxDesc title='Rating' desc={`${Animes.data.score}`} />
                 <BoxDesc title='Status' desc={`${Animes.data.status}`} />
-                <BoxDesc title='Episode' desc={`${Animes.data.episodes}`} />
+                <BoxDesc title='Total Episodes' desc={`${Animes.data.episodes}`} />
                 <BoxDesc title='Duration' desc={`${Animes.data.duration}`} />
             </div>
-            <div className='text-justify self-center rounded-md w-4/5 bg-paletAbu-100 p-2 shadow-2xl transition-all hover:bg-paletAbu-200'>
+            <div className='md:hover:scale-110 text-justify self-center rounded-md w-4/5 bg-paletAbu-100 p-2 shadow-2xl transition-all hover:bg-paletAbu-200'>
                 <h1 className='font-bold'> Synopsis: </h1>
                 {Animes.data.synopsis}
             </div>

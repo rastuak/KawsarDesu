@@ -8,7 +8,7 @@ const Header = ({ headerTitle, linkTitle, linkHref }) => {
                 {linkHref && linkTitle
                     ?
                     <Link href={linkHref}
-                        className='hover:text-paletKuning-coba pt-6 pr-2 text-md'
+                        className='hover:text-paletKuning-coba text-xl pt-6 pr-2 text-md'
                     >{linkTitle}
                     </Link>
                     :
